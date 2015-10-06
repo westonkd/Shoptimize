@@ -1,0 +1,38 @@
+// Place all the styles related to the login controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.mdl-layout-title {
+  img {
+    height: 40px;
+  }
+}
+
+.center-content {
+  text-align: center;
+}
+
+main {
+  background-image: image-url("login-back.png");
+  background-size: cover;
+
+  .mdl-card.login-card {
+    width: 100%;
+    margin-top: 10vw;
+    opacity: 0.9;
+  }
+
+  #email-text, #login {
+    width: 100%
+  }
+
+  .mdl-card form {
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .mdl-card__supporting-text {
+    text-align: left;
+  }
+}
