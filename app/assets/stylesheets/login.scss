@@ -2,17 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.mdl-layout-title {
-  img {
-    height: 40px;
-  }
+.mdl-card__supporting-text {
+  color: rgba(0, 0, 0, .9) !important;
 }
 
 .center-content {
   text-align: center;
 }
 
-main {
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+  font-weight: light;
+}
+
+h3, h4, p, main *:not(h2) {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  color: rgb(63,81,181) !important;
+}
+
+h1 {
+  color: white;
+  font-size: 35px;
+}
+
+main#login-main {
   background-image: image-url("login-back.png");
   background-size: cover;
 
@@ -20,6 +36,7 @@ main {
     width: 100%;
     margin-top: 10vw;
     opacity: 0.9;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
   }
 
   #email-text, #login {

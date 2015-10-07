@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   root 'login#index'
   post 'login' => 'login#login'
   get 'lists' => 'lists#index'
+
+  post 'lists/create' => 'lists#create'
+  post 'lists/edit/:id' => 'lists#edit'
+  get 'lists/edit/:id' => 'lists#edit'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
