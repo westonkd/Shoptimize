@@ -1,3 +1,96 @@
+.small-card {
+  padding: 10px;
+}
+
+.card-heading {
+  margin-top: 0px;
+  font-size: 25px;
+  color: #757575;
+}
+
+main#list-edit {
+  th {
+    font-size: 16px !important;
+  }
+
+  #purchased-heading {
+    text-align: right !important;
+  }
+
+  .check-td {
+    text-align: right !important;
+  }
+
+  .mdl-data-table td .mdl-data-table__select {
+    position: relative !important;
+    margin-right: 18px;
+  }
+
+  .category-label {
+    font-size: 16px;
+    font-color: #757575 !important;
+    height: 35px;
+    background-color: #e0e0e0;
+
+    td {
+      height: inherit;
+      padding-top: 7px;
+    }
+  }
+
+  .date {
+    float: left;
+    margin-top: -18px;
+    color: #757575;
+  }
+
+  #item-entry {
+    #add-item-button {
+      margin-top: 15px;
+    }
+
+    input, button, label, .mdl-textfield {
+      width: 100%;
+    }
+  }
+
+  #list-title {
+    font-size: 30px;
+    color: #757575;
+  }
+
+  #list-table {
+    width: 100%;
+
+    td {
+      text-align:left;
+    }
+
+    th {
+      font-size: 22px;
+      text-align:left;
+
+      .mdl-data-table__select {
+        display: none;
+      }
+    }
+  }
+
+  i {
+    cursor: pointer;
+    color: rgba(0,0,0,.54);
+    transition: color .25s;
+  }
+
+  i:hover {
+    color: black;
+  }
+
+  tr.is-selected *:not(i) {
+    text-decoration: line-through;
+  }
+}
+
 main#list-main {
   background-color: #ECD3DD;
 

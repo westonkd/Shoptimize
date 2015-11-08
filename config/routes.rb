@@ -9,7 +9,12 @@ Rails.application.routes.draw do
 
   post 'lists/create' => 'lists#create'
   post 'lists/edit/:id' => 'lists#edit'
+  post 'lists/edit/name/:id' => 'lists#save_name'
+  post 'lists/edit/add/:id' => 'lists#add_item'
+  post 'lists/edit/purchased/:id' => 'items#change_purchase'
+  get 'lists/edit/items/:id' => 'lists#fetch_items'
   get 'lists/edit/:id' => 'lists#edit'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

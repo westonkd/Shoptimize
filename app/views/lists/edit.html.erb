@@ -1,1 +1,22 @@
-<h3>Edit list <%= @current_list %></h3>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">
+        <h1>Shoptimize</h1>
+      </span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+      </nav>
+    </div>
+  </header>
+  <main id="list-edit" class="mdl-layout__content">
+    <div class="page-content">
+      <%= react_component('EditListLayout', list: @current_list, items: @list_items, token: form_authenticity_token, date: @date.to_formatted_s(:rfc822)) %>
+    </div>
+  </main>
+</div>
+

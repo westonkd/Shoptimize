@@ -15,7 +15,7 @@
   </header>
   <main id="list-main" class="mdl-layout__content">
     <div class="page-content">
-      <%= react_component('Lists', lists: @lists, token: form_authenticity_token) %>
+      <%= react_component('Lists', lists: @lists, listMap: @list_map, token: form_authenticity_token) %>
     </div>
   </main>
 </div>
